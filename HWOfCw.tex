@@ -54,5 +54,23 @@
     \item \textbf{پلاگین‌ها:} استفاده از پلاگین‌های معروف مانند \texttt{vim-fugitive} و \texttt{NERDTree}.
     \item \textbf{حالت ترمینال:} باز کردن ترمینال با دستور \texttt{:term}.
 \end{itemize}
+\subsection{Memory Profiling}
+\subsubsection{Memory Leak}
+\textbf{Memory Leak} زمانی رخ می‌دهد که حافظه تخصیص داده شده آزاد نشود و باعث کاهش کارایی سیستم شود.
+
+\subsubsection{Valgrind}
+ابزار \textbf{Valgrind} به شناسایی مشکلات حافظه و رفع \textbf{Memory Leak} کمک می‌کند.
+\subsection{GNU/Linux Bash Scripting}
+\subsubsection{fzf}
+برای جستجوی تعاملی فایل‌ها:
+\begin{verbatim}
+fd -e pdf | fzf
+\end{verbatim}
+
+\subsubsection{Opening PDFs with Zathura}
+برای باز کردن فایل‌های PDF انتخاب شده:
+\begin{verbatim}
+zathura $(fd -e pdf | fzf)
+\end{verbatim}
 
 \end{document}
