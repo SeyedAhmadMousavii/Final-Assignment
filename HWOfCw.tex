@@ -1,20 +1,20 @@
 \documentclass{article}
 \usepackage{graphicx}
 \begin{document}
-\title{ُSeyed Ahmad Mousavi Zadeh - 403522145}
+\textbf{Seyed Ahmad Mousavi Zadeh - 403522145}
 
 \section{Git and GitHub}
 
 \subsection{Repository Initialization and Commits}
-برای شروع پروژه:
+\paragraph{To start a project:}
 \begin{enumerate}
-    \item یک مخزن جدید در GitHub ایجاد کنید.
-    \item مخزن را با دستور زیر کلون کنید:
+    \item Create a new repository on GitHub.
+    \item Clone the repository using the following command:
     \begin{verbatim}
     git clone <URL>
     cd <repository-name>
     \end{verbatim}
-    \item فایل‌ها را اضافه کرده و کامیت کنید:
+    \item Add files and commit them:
     \begin{verbatim}
     git add .
     git commit -m "Initial commit"
@@ -22,10 +22,10 @@
     \end{verbatim}
 \end{enumerate}
 \subsection{GitHub Actions for LaTeX Compilation}
-برای تنظیم \textbf{GitHub Actions} مراحل زیر را انجام دهید:
+To set up \textbf{GitHub Actions}, follow these steps:
 \begin{enumerate}
-    \item پوشه \texttt{.github/workflows} را ایجاد کنید.
-    \item یک فایل \texttt{latex-build.yml} بسازید:
+    \item Create the folder \texttt{.github/workflows}.
+    \item Create a file named \texttt{latex-build.yml}:
     \begin{verbatim}
     name: Build LaTeX Document
     on:
@@ -48,35 +48,37 @@
 \section{Exploration Tasks}
 
 \subsection{Vim Advanced Features}
-ویژگی‌های پیشرفته Vim:
+Advanced Vim features:
 \begin{itemize}
-    \item \textbf{ماکروها:} ضبط دستورات با زدن \texttt{q} و تکرار با زدن \texttt{@}.
-    \item \textbf{پلاگین‌ها:} استفاده از پلاگین‌های معروف مانند \texttt{vim-fugitive} و \texttt{NERDTree}.
-    \item \textbf{حالت ترمینال:} باز کردن ترمینال با دستور \texttt{:term}.
+    \item \textbf{Macros:} Record commands with \texttt{q} and repeat them with \texttt{@}.
+    \item \textbf{Plugins:} Use popular plugins like \texttt{vim-fugitive} and \texttt{NERDTree}.
+    \item \textbf{Terminal mode:} Open a terminal with the command \texttt{:term}.
 \end{itemize}
 \subsection{Memory Profiling}
 \subsubsection{Memory Leak}
-\textbf{Memory Leak} زمانی رخ می‌دهد که حافظه تخصیص داده شده آزاد نشود و باعث کاهش کارایی سیستم شود.
+A \textbf{Memory Leak} occurs when allocated memory is not freed, causing system performance degradation.
 
 \subsubsection{Valgrind}
-ابزار \textbf{Valgrind} به شناسایی مشکلات حافظه و رفع \textbf{Memory Leak} کمک می‌کند.
+The tool \textbf{Valgrind} helps identify memory issues and resolve \textbf{Memory Leaks}.
 \subsection{GNU/Linux Bash Scripting}
 \subsubsection{fzf}
-برای جستجوی تعاملی فایل‌ها:
+For interactive file searching:
 \begin{verbatim}
 fd -e pdf | fzf
 \end{verbatim}
 
 \subsubsection{Opening PDFs with Zathura}
-برای باز کردن فایل‌های PDF انتخاب شده:
+To open selected PDF files:
 \begin{verbatim}
 zathura $(fd -e pdf | fzf)
 \end{verbatim}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{assets/Screenshot 2025-01-15 233322.png}
-    \caption{sample issue}
+    \caption{Sample Issue}
     \label{fig:example}
 \end{figure}
+\paragraph{Yes, I do see myself contributing to FOSS projects in the future. Open-source software plays a vital role in fostering innovation and collaboration, and I am excited about the idea of contributing to such projects. I would be particularly interested in contributing to development tools, such as text editors and automation scripts, as well as programming languages and scientific computing libraries. Additionally, I would like to contribute to improving documentation and tutorials for users, ensuring that open-source projects are more accessible to a wider audience. Overall, I believe that contributing to FOSS is a great way to learn, collaborate, and give back to the community.}
+\paragraph{https://github.com/SeyedAhmadMousavii/Final-Assignment}
 
 \end{document}
