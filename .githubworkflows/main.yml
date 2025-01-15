@@ -1,0 +1,25 @@
+name: Build LaTeX Document
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup LaTeX
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: HWOfCW.tex
+          compiler: pdflatex
+
+      - name: Upload PDF to GitHub Releases
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: 403522145.pdf
+          token: ${{ secrets.GITHUB_TOKEN }}
