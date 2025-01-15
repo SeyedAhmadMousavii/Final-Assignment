@@ -21,6 +21,29 @@
     git push origin main
     \end{verbatim}
 \end{enumerate}
-
+\subsection{GitHub Actions for LaTeX Compilation}
+برای تنظیم \textbf{GitHub Actions} مراحل زیر را انجام دهید:
+\begin{enumerate}
+    \item پوشه \texttt{.github/workflows} را ایجاد کنید.
+    \item یک فایل \texttt{latex-build.yml} بسازید:
+    \begin{verbatim}
+    name: Build LaTeX Document
+    on:
+      push:
+        tags:
+          - '*'
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v2
+          - name: Setup LaTeX
+            uses: xu-cheng/latex-action@v2
+            with:
+              root_file: main.tex
+              compiler: pdflatex
+    \end{verbatim}
+\end{enumerate}
 
 \end{document}
